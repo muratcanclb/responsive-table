@@ -1,0 +1,157 @@
+:root {
+  --background: #675f9b;
+  --table-background: #675f9b;
+  --primary: #675f9b;
+  --success: #66ec61;
+  --secondary: #78807793;
+  --text-color: #ffff;
+  --th-background: #2e2b43;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  margin: 0px;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #675f9b;
+}
+
+.table-widget {
+  border-radius: 1rem;
+  background: var(--table-background);
+  padding: 1.5rem;
+  text-align: left;
+  overflow-x: auto;
+  color: var(--text-color);
+}
+
+.table-widget table {
+  max-width: fit-content;
+  border-collapse: collapse;
+}
+
+.table-widget thead tr {
+  background: var(--th-background);
+}
+
+.table-widget .caption {
+  display: flex;
+  justify-content: space-between;
+  float: right;
+}
+
+.table-widget .export-btn {
+  background: none;
+  color: var(--text-color);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.table-widget .export-btn:hover {
+  color: var(--success);
+}
+
+.table-widget .export-btn svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.table-widget th {
+  padding: 1.25rem 1rem;
+  font-size: 1.05rem;
+  font-weight: 800;
+  vertical-align: middle;
+}
+
+.table-widget td {
+  padding: 1rem;
+  background: transparent;
+  color: white;
+  vertical-align: middle;
+}
+
+.table-widget tbody tr {
+  transition: all 0.2s;
+}
+
+.table-widget tbody tr:hover {
+  cursor: pointer;
+  background: var(--th-background);
+}
+
+.status {
+  display: flex;
+  font-weight: 700;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.status__circle {
+  display: inline-block;
+  height: 0.5rem;
+  width: 0.5rem;
+  border-radius: 50%;
+}
+
+.status--active {
+  background: var(--success);
+}
+
+.status--inactive {
+  background: var(--secondary);
+}
+
+.likeMusic {
+  color: rgb(143, 18, 18); /* Kalpli olan kullanıcıları kırmızı renkte göster */
+}
+
+.textbox {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+  width: 300px;
+}
+.textbox:focus {
+  border-color: #570a5e;
+}
+
+.search-box {
+    position: relative;
+    display: inline-block;
+  }
+
+  .search-box input[type="text"] {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    padding-left: 30px; /* İkon için sol iç boşluk */
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: 300px;
+  }
+
+  .search-box input[type="text"]:focus {
+    border-color: #420444;
+  }
+.search-icon {
+    position: absolute;
+    left: 10px; /* İkonun textbox içindeki pozisyonu */
+    top: 50%; /* İkonun textbox yüksekliğine göre dikey hizalama */
+    transform: translateY(-50%); /* İkonun dikey hizalaması */
+    color: #999;
+  }
+  button.icon-button {
+    background: url('icon-url.svg') no-repeat left center;
+    background-size: 16px 16px;
+    padding-left: 20px; /* İkonun genişliğine göre ayarlayın */
+}
