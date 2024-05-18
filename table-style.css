@@ -85,28 +85,6 @@ body {
   background: var(--th-background);
 }
 
-.status {
-  display: flex;
-  font-weight: 700;
-  gap: 0.5rem;
-  align-items: center;
-}
-
-.status__circle {
-  display: inline-block;
-  height: 0.5rem;
-  width: 0.5rem;
-  border-radius: 50%;
-}
-
-.status--active {
-  background: var(--success);
-}
-
-.status--inactive {
-  background: var(--secondary);
-}
-
 .likeMusic {
   color: rgb(143, 18, 18); /* Kalpli olan kullanıcıları kırmızı renkte göster */
 }

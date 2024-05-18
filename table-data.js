@@ -5,9 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   form.addEventListener("submit", function (event) {
     clearTable();
     event.preventDefault();
-    console.log("değer", document.getElementById("name").value);
     if (document.getElementById("name").value) {
-      console.log("değer1", document.getElementById("name").value);
       // Input alanından değeri al
       const searchValue = document.getElementById("name").value;
       getMusicData(searchValue);
@@ -58,13 +56,10 @@ function getMusicData(filteredName) {
     });
 }
 function clearTable() {
-  console.log("clearTable");
   // Tabloyu seç
   const table = document.getElementById("musicTable");
-
   // Tablonun tbody'sini seç
   const tbody = table.getElementsByTagName("tbody")[0];
-
   // tbody'nin tüm çocuklarını kaldır (satırları kaldır)
   while (tbody.firstChild) {
     tbody.removeChild(tbody.firstChild);
